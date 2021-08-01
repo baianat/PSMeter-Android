@@ -1,0 +1,87 @@
+ext {
+    androidBuildToolsVersion = "30.0.3"
+    androidMinSdkVersion = 23
+    androidTargetSdkVersion = 30
+    androidCompileSdkVersion = 30
+    androidVersionCode = 1
+    androidVersionName = "1.0"
+
+    androidGradlePlugins = [
+            kotlin_gradle_gradle: "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.61",
+            apollo_gradle_plugin: "com.apollographql.apollo:apollo-gradle-plugin:1.2.0"
+    ]
+
+    //kotlinDependency
+    kotlinVersion = "1.4.32"
+    kotlinDependency = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}"
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    //androidXDependencies
+    material = "1.1.0-beta01"
+    palette = "1.0.0"
+    appCompatX = "1.2.0"
+    coreKtx = "1.3.2"
+    constraintLayout = "2.0.4"
+    annotation = "1.1.0"
+    androidXDependencies = [
+            appCompat       : "androidx.appcompat:appcompat:${appCompatX}",
+            coreKtx         : "androidx.core:core-ktx:${coreKtx}",
+            constraintLayout: "androidx.constraintlayout:constraintlayout:${constraintLayout}",
+            material        : "com.google.android.material:material:${material}",
+            palette         : "androidx.palette:palette:${palette}",
+            annotation      : "androidx.annotation:annotation:${annotation}",
+            fragment        : "androidx.fragment:fragment-ktx:1.3.4",
+            activity        : "androidx.activity:activity-ktx:1.2.3"
+    ]
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    //firebaseDependencies
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    firebaseDependencies = [
+            firebaseConfig     : "com.google.firebase:firebase-config:20.0.4",
+            firebaseAuth       : "com.google.firebase:firebase-auth:20.0.4",
+            firebaseMessaging  : "com.google.firebase:firebase-messaging:21.0.1",
+            firebaseCrashlytics: "com.google.firebase:firebase-crashlytics:17.4.1",
+            firebaseAnalytics  : "com.google.firebase:firebase-analytics:18.0.3"
+    ]
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //rxDependencies
+    rxJavaVersion = "3.0.6"
+    rxKotlinVersion = "3.0.0"
+    rxAndroidVersion = "3.0.0"
+    rxDependencies = [
+            rxJava   : "io.reactivex.rxjava3:rxjava:${rxJavaVersion}",
+            rxKotlin : "io.reactivex.rxjava3:rxkotlin:${rxKotlinVersion}",
+            rxAndroid: "io.reactivex.rxjava3:rxandroid:${rxAndroidVersion}",
+    ]
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //testsDependencies
+    testsDependencies = [
+            junit                 : "junit:junit:4.12",
+            junitExt              : "androidx.test.ext:junit:1.1.1",
+            testCore              : "androidx.test:core:1.2.0",
+            espresso              : "androidx.test.espresso:espresso-core:3.2.0",
+            testRunner            : "androidx.test:runner:1.2.0",
+            testRules             : "androidx.test:rules:1.2.0",
+            espressoIdlingResource: "androidx.test.espresso:espresso-idling-resource:3.3.0",
+            mockitoCore           : "org.mockito:mockito-core:2.21.0",
+            mockitoAndroid        : "org.mockito:mockito-android:2.21.0",
+            espressoContrib       : "androidx.test.espresso:espresso-contrib:3.3.0",
+            powerMock             : "org.powermock:powermock-api-mockito:1.6.6",
+            powerMockModule       : "org.powermock:powermock-module-junit4:1.6.6"
+
+    ]
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    //helperDependencies
+    paginate = "0.5.1"
+    helperDependencies = [
+            nbvcxz                : "me.gosimple:nbvcxz:1.5.0",
+    ]
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+}

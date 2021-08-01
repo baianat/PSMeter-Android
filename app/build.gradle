@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion androidCompileSdkVersion
+    buildToolsVersion androidBuildToolsVersion
+
+    defaultConfig {
+        applicationId "com.baianat.psmeter"
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    testOptions.unitTests.includeAndroidResources = true
+    buildFeatures {
+        viewBinding = true
+    }
+
+}
+
+dependencies {
+    implementation kotlinDependency
+    implementation androidXDependencies.values()
+    testImplementation testsDependencies.junit
+    testImplementation testsDependencies.testRunner
+    testImplementation testsDependencies.testRules
+    testImplementation testsDependencies.espressoIdlingResource
+    testImplementation testsDependencies.espressoContrib
+    testImplementation testsDependencies.powerMock
+    testImplementation testsDependencies.powerMockModule
+
+    androidTestImplementation  testsDependencies.mockitoCore
+    androidTestImplementation  testsDependencies.mockitoAndroid
+    androidTestImplementation testsDependencies.junitExt
+    androidTestImplementation testsDependencies.espresso
+
+    implementation testsDependencies.testCore
+    implementation project(':PSMeter')
+}

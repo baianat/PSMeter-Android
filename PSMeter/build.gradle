@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'maven-publish'
+}
+
+android {
+    compileSdkVersion androidCompileSdkVersion
+    buildToolsVersion androidBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation kotlinDependency
+    implementation androidXDependencies.values()
+    implementation rxDependencies.values()
+    implementation helperDependencies.nbvcxz
+    testImplementation testsDependencies.junit
+    testImplementation testsDependencies.testRunner
+    testImplementation testsDependencies.testRules
+    testImplementation testsDependencies.espressoIdlingResource
+    testImplementation testsDependencies.espressoContrib
+    testImplementation testsDependencies.powerMock
+    testImplementation testsDependencies.powerMockModule
+
+    androidTestImplementation  testsDependencies.mockitoCore
+    androidTestImplementation  testsDependencies.mockitoAndroid
+    androidTestImplementation testsDependencies.junitExt
+    androidTestImplementation testsDependencies.espresso
+
+}
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.baianat.PSMeter'
+                artifactId = 'final'
+                version = '1.0'
+            }
+        }
+    }
+}

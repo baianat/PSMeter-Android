@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strength">Strength</string>
+    <string name="empty">Empty</string>
+    <string name="very_Weak">Very Weak</string>
+    <string name="Weak">Weak</string>
+    <string name="weak">Weak</string>
+    <string name="fair">Fair</string>
+    <string name="strong">Strong</string>
+    <string name="very_strong">Very strong</string>
+
+</resources>
