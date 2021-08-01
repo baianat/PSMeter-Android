@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="psColorVeryWeak">#DE0700</color>
-    <color name="psColorWeak">#DD3801</color>
-    <color name="psColorFair">#FECB00</color>
-    <color name="psColorStrong">#2FE60B</color>
-    <color name="psColorVeryStrong">#1B9606</color>
-</resources>

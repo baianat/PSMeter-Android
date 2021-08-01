@@ -1,3 +1,0 @@
-include ':PSMeter'
-include ':app'
-rootProject.name = "PSMeter-Android"
