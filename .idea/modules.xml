@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PSMeter.iml" filepath="$PROJECT_DIR$/.idea/modules/PSMeter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PSMeter.Example.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PSMeter.Example.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PSMeter/PSMeter.PSMeter.iml" filepath="$PROJECT_DIR$/.idea/modules/PSMeter/PSMeter.PSMeter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PSMeter/PSMeter.IPSMeter.iml" filepath="$PROJECT_DIR$/.idea/modules/PSMeter/PSMeter.IPSMeter.iml" />
     </modules>
   </component>
 </project>

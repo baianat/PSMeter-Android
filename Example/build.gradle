@@ -57,5 +57,5 @@ dependencies {
     androidTestImplementation testsDependencies.espresso
     androidTestImplementation testsDependencies.barista
     implementation testsDependencies.testCore
-    implementation project(':PSMeter')
+    implementation project(':IPSMeter')
 }
