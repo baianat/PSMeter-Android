@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PSMeter.iml" filepath="$PROJECT_DIR$/.idea/modules/PSMeter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PSMeter.Example.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PSMeter.Example.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PSMeter/PSMeter.PSMeter.iml" filepath="$PROJECT_DIR$/.idea/modules/PSMeter/PSMeter.PSMeter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PSMeter.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PSMeter.app.iml" />
     </modules>
   </component>
 </project>
