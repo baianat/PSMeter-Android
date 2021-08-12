@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PsMeterView">
+        <attr name="psLabel" format="string" />
+        <attr name="psTextColor" format="color" />
+        <attr name="psBackgroundProgressColor" format="color" />
+        <attr name="psFont" format="reference" />
+
+    </declare-styleable>
+</resources>
