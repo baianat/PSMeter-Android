@@ -13,7 +13,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -51,6 +51,8 @@ dependencies {
     implementation  "io.reactivex.rxjava3:rxkotlin:${rxKotlinVersion}"
     implementation  "io.reactivex.rxjava3:rxandroid:${rxAndroidVersion}"
 
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
 }
 afterEvaluate {
     publishing {
