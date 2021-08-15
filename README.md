@@ -9,7 +9,7 @@
 
 1-  Add import PSMeter to your project.
 ```sh
-implementation "com.github.YoussefSeddik:PSMeter:${VERSION}"
+implementation ":${VERSION}"
 
 ```
 2- Add PSMeterView to your XML
@@ -169,28 +169,6 @@ enum class PassStrengthEnum(val score: Int) {
 ##### Default Algorithm:
 The default algorithm for determining password strength is based on 
 [GoSimpleLLC/nbvcxz](https://github.com/GoSimpleLLC/nbvcxz)
-
-##### Custom Algorithm:
-You can easily use your owen custom password estimator by implement the `PsMeterEstimator`
-Example:
-
-```sh  
-class CustomPassEstimation : PsMeterEstimator {
-        override fun estimatePassword(pass: String): PsMeterStrengthCategoryEnum {
-            return when (pass.length) {
-                0 -> PsMeterStrengthCategoryEnum.EMPTY
-                1 -> PsMeterStrengthCategoryEnum.VERY_WEAK
-                2 -> PsMeterStrengthCategoryEnum.Weak
-                3 -> PsMeterStrengthCategoryEnum.FAIR
-                4 -> PsMeterStrengthCategoryEnum.STRONG
-                else -> PsMeterStrengthCategoryEnum.VERY_STRONG
-            }
-        }
-    }
-```
-And then attach your custom defenestion to PassEstimator view by:
-
-`[PsMeterView].configurePsMeterEstimator(CustomPassEstimation())`
 
 ### Dependency.
 PSMeter uses [GoSimpleLLC/nbvcxz](https://github.com/GoSimpleLLC/nbvcxz), rxkotlin, rxAndroid under its hood, they gets automatically installed with library.
