@@ -42,10 +42,4 @@ class PsMeterDecoratorBuilder {
     fun build(): PsMeterDecoratorBuilder {
         return this
     }
-
-    companion object {
-        fun builder(): PsMeterDecoratorBuilder {
-            return PsMeterDecoratorBuilder()
-        }
-    }
 }

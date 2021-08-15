@@ -1,3 +1,3 @@
-include ':IPSMeter'
-include ':Example'
+include ':PSMeter'
+include ':app'
 rootProject.name = "PSMeter"
