@@ -9,7 +9,7 @@
 
 1-  Add import PSMeter to your project.
 ```sh
-implementation "com.github.YoussefSeddik:PSMeter:${VERSION}"
+implementation ":${VERSION}"
 
 ```
 2- Add PSMeterView to your XML
