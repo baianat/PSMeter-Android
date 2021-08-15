@@ -1,4 +1,4 @@
-package com.baianat.psmeter
+package com.baianat.example
 
 import org.junit.Test
 

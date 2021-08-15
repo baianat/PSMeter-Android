@@ -1,19 +1,18 @@
-package com.baianat.psmeter
+package com.baianat.example
 
 import android.os.Bundle
-import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
-import com.baianat.psmeter.databinding.ActivityMainBinding
+import com.baianat.example.databinding.ActivityMainBinding
+import com.baianat.psmeter.R
 import com.baianat.psmeter.pass_estimator.PsMeterEstimator
-import com.baianat.psmeter.pass_meter_view.PsMeterView
 import com.baianat.psmeter.pass_strength_category.PsMeterStrengthCategoryEnum
 import com.baianat.psmeter.pass_strength_decorator.PsMeterDecoratorBuilder
 import com.baianat.psmeter.pass_strength_decorator.PsMeterStateDecorator
 
 class MainActivity : AppCompatActivity() {
-    lateinit var ui : ActivityMainBinding
+    lateinit var ui: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

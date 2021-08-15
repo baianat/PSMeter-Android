@@ -62,7 +62,7 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.baianat.JPSMeter'
+                groupId = 'com.baianat.psmeter'
                 artifactId = 'final'
                 version = '1.0'
             }

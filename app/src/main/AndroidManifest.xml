@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.baianat.psmeter">
+    package="com.baianat.example">
 
     <application
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.baianat.example.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
