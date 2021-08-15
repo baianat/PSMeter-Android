@@ -3,19 +3,19 @@
 
 ![](https://github.com/YoussefSeddik/PSMeter/blob/master/PsMetertPreview.gif)
 
-[![](https://jitpack.io/v/YoussefSeddik/PSMeter.svg)](https://jitpack.io/#YoussefSeddik/PSMeter)
+[![](https://jitpack.io/v/baianat/PSMeter-Android.svg)](https://jitpack.io/#baianat/PSMeter-Android)
 
 ### Quick Start:
 
 1-  Add import PSMeter to your project.
 ```sh
-implementation ":${VERSION}"
+implementation "com.github.baianat:PSMeter-Android:${VERSION}"
 
 ```
 2- Add PSMeterView to your XML
 
 ```sh
-    <com.baianat.psmeter.PsMeterView
+    <com.baianat.psmeter.pass_meter_view.PsMeterView
         android:id="@+id/psMeterView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
