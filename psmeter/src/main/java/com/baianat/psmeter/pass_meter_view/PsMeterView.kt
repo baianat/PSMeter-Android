@@ -89,7 +89,10 @@ class PsMeterView constructor(context: Context, attrs: AttributeSet) :
 
     private fun updatePsMeterProgress(password: String) {
         val passwordStrengthCategory =
-            getProperPassStrength(password, mPsMeterDecoratorBuilder, mPsMeterEstimator)
+        getProperPassStrength(password, mPsMeterDecoratorBuilder, mPsMeterEstimator)
+        passStrengthMessage = context.getString(passwordStrengthCategory.strengthMessage())
+        passStrengthEnum = passwordStrengthCategory.strengthPhase()
+        mPsMeterStrengthListener?.onPsMeterScoreChanged()
         setUpPsMeterDecorator(passwordStrengthCategory.psMeterStateDecorator)
         setUpPsMeterProgress(passwordStrengthCategory)
     }
@@ -101,14 +104,11 @@ class PsMeterView constructor(context: Context, attrs: AttributeSet) :
     }
 
     private fun setUpPsMeterProgress(psStrengthCategory: PsMeterStrengthCategory) {
-        mPsMeterStrengthListener?.onPsMeterScoreChanged()
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             mPsMeterProgressBar.setProgress(psStrengthCategory.strengthRatio(), true)
         } else {
             mPsMeterProgressBar.progress = psStrengthCategory.strengthRatio()
         }
-        passStrengthMessage = context.getString(psStrengthCategory.strengthMessage())
-        passStrengthEnum = psStrengthCategory.strengthPhase()
         mPsMeterLabelTextView.extSetText(psStrengthCategory.strengthMessage())
     }
 
