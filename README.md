@@ -3,7 +3,8 @@
 
 ![](https://github.com/YoussefSeddik/PSMeter/blob/master/PsMetertPreview.gif)
 
-[![](https://jitpack.io/v/baianat/PSMeter-Android.svg)](https://jitpack.io/#baianat/PSMeter-Android)
+[![]([![](https://jitpack.io/v/baianat/PSMeter-Android.svg)](https://jitpack.io/#baianat/PSMeter-Android)
+)
 
 ### Quick Start:
 
